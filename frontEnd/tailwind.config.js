@@ -1,9 +1,14 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: [],
+module.exports = {
+  content: [
+    "./index.html",  // Vite entry file
+    "./src/**/*.{js,ts,jsx,tsx}",  // React components
+  ],
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('daisyui'),
+  ],
 }
 

@@ -22,7 +22,7 @@ export default function Inventory() {
 
     //this case must be present in order to allow inventory to load in
     if (!Array.isArray(inventory.inventoryItems)) {
-        return <div>No inventory available</div>; // Handle non-array case gracefully (map() is not a function)
+        return <div class="text-center">No inventory available</div>; // Handle non-array case gracefully (map() is not a function)
       }
     return(
         <div>
