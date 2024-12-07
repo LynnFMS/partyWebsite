@@ -27,19 +27,19 @@ export default function Root() {
             
             <main className="text-left m-14 flex flex-col">
                 <NavLink to="/all">
-                    <button className="bg-slate-400 border border-black w-40 transition-transform transform hover:scale-105 hover:bg-red-700 m-1">all</button>
+                    <button className="bg-yellow-600 text-white rounded-full w-40 transition-transform transform hover:scale-105 hover:bg-white hover:text-yellow-600 m-1 mt-10 font-bold">All</button>
                 </NavLink>
                 <NavLink>
-                    <button className="bg-slate-400 border border-black w-40 transition-transform transform hover:scale-105 hover:bg-red-700 m-1">category</button>
+                    <button className="bg-yellow-600 text-white rounded-full w-40 transition-transform transform hover:scale-105 hover:bg-white hover:text-yellow-600 m-1 font-bold">Category</button>
                 </NavLink>
                 <NavLink>
-                    <button className="bg-slate-400 border border-black w-40 transition-transform transform hover:scale-105 hover:bg-red-700 m-1">category</button>
+                    <button className="bg-yellow-600 text-white rounded-full w-40 transition-transform transform hover:scale-105 hover:bg-white hover:text-yellow-600 m-1 font-bold">Category</button>
                 </NavLink>
                 <NavLink>
-                    <button className="bg-slate-400 border border-black w-40 transition-transform transform hover:scale-105 hover:bg-red-700 m-1">category</button>
+                    <button className="bg-yellow-600 text-white rounded-full w-40 transition-transform transform hover:scale-105 hover:bg-white hover:text-yellow-600 m-1 font-bold">Category</button>
                 </NavLink>
                 <NavLink>
-                    <button className="bg-slate-400 border border-black w-40 transition-transform transform hover:scale-105 hover:bg-red-700 m-1">category</button>
+                    <button className="bg-yellow-600 text-white rounded-full w-40 transition-transform transform hover:scale-105 hover:bg-white hover:text-yellow-600 m-1 font-bold">Category</button>
                 </NavLink>
             </main>
             <Outlet></Outlet>
