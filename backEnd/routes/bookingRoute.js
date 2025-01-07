@@ -43,12 +43,13 @@ router.get("/admin", async (req, res) => {
 
 //Creates New Inventory Item
 router.post("/booking", async (req, res) => {
-    const { name, date, location, item } = req.body
+    const { name, email, date, location, item } = req.body
     
-    console.log("Received Booking: ", { name, date, location, item })
+    console.log("Received Booking: ", { name, email, date, location, item })
     try {
         const newBooking = new Booking ({
             name,
+            email,
             date,
             location,
             item
@@ -70,9 +71,9 @@ router.post("/booking", async (req, res) => {
 //updates existing bookings
 router.put("/admin/:id", async (req, res) => {
     const { id } = req.params;
-    const { name, date, location, item } = req.body;
+    const { name, email, date, location, item } = req.body;
     try {
-        const updateBooking = await Booking.findByIdAndUpdate(id, { name, date, location, item }, { new: true }); //finds a booking by Id, then updates and saves the new booking
+        const updateBooking = await Booking.findByIdAndUpdate(id, { name, email, date, location, item }, { new: true }); //finds a booking by Id, then updates and saves the new booking
 
         if(!updateBooking) {
             return res.status(404).json({
