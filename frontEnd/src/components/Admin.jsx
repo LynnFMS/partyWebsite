@@ -85,6 +85,7 @@ return (
                     <tr>
                         <th className="px-4 py-2 border-b-2 border-black text-white text-center">Name</th>
                         <th className="px-4 py-2 border-b-2 border-black text-white text-center">Date</th>
+                        <th className="px-4 py-2 border-b-2 border-black text-white text-center">Email</th>
                         <th className="px-4 py-2 border-b-2 border-black text-white text-center">Address</th>
                         <th className="px-4 py-2 border-b-2 border-black text-white text-center">Item</th>
                     </tr>
@@ -94,6 +95,7 @@ return (
                         <tr key={booking.id}>
                             <td className="px-4 py-2 border-b-2 border-black text-white">{booking.name}</td>
                             <td className="px-4 py-2 border-b-2 border-black text-white">{new Date(booking.date).toLocaleDateString()}</td>
+                            <td className="px-4 py-2 border-b-2 border-black text-white">{booking.email}</td>
                             <td className="px-4 py-2 border-b-2 border-black text-white">{booking.location}</td>
                             <td className="px-4 py-2 border-b-2 border-black text-white">{booking.item}</td>
                             <td className="px-4 py-2 border-b-2 border-black text-white">
